@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: rgb(255,125,250);
+    color: #ffffff;
+}
+
+body.body-class {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: rgb(255,125,250);
+    background: linear-gradient(0deg, rgba(255,125,250,1) 0%, rgba(131,45,253,1) 100%);
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 5px 0 5px 0;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+div.initial-display {
+    position: absolute;
+    z-index: 999999;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -180px;
+}
+
+div.initial-display>h1 {
+    color: #ffffff;
+}
+
+div.initial-display>button {
+    margin-left: 40%;
+    padding: 0;
+    border: none;
+    font-size: 50px;
+    color: #9b1c31;
+    background: none;
+    cursor: pointer;
+    text-shadow: 0px 5px 15px;
+}
+
+div.initial-display>button:hover {
+    transform: scale(1.5);
+    color: #b83939;
+}
+
+section {
+    height: 100vh;
+    border-bottom: 2px solid #ffffff;
+    overflow: hidden;
+}
+
+div.img-description-left {
+    float: left;
+    width: 40%;
+    overflow: hidden;
+}
+
+div.img-description-right {
+    float: right;
+    width: 60%;
+    overflow: hidden;
+}
+
+div.img-right-wrapper {
+    width: 60%;
+    float: right;
+    height: 100vh;
+    overflow: hidden;
+}
+
+div.img-left-wrapper {
+    width: 40%;
+    float: left;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img.img-right {
+    width: 100%;
+    height: 100%;
+}
+
+img.img-left {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Counter */
+ul#countdown {
+    position: relative;
+    top: 50%;
+    transform: translateY(100%);
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 0 20px 0;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-width: 1px 0;
+    overflow: hidden;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+  }
+  ul#countdown li {
+    margin: 0 -3px 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 25%;
+    font-size: 72px;
+    font-size: 6vw;
+    text-align: center;
+  }
+  ul#countdown li .label {
+    color: #ffffff;
+    font-size: 18px;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+  }
