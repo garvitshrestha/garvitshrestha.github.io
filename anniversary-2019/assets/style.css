@@ -16,11 +16,18 @@ body.body-class {
     color: #ffffff;
 }
 
-h1 {
+h1.pre-contents {
     text-align: center;
     text-transform: capitalize;
     padding: 5px 0 5px 0;
     font-size: 40px;
+}
+
+h1.inner-headings {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 5px 0 5px 0;
+    /* font-size: 0; */
 }
 
 p {
@@ -57,7 +64,7 @@ div.initial-display>button:hover {
 }
 
 section {
-    height: 100vh;
+    height: 120vh;
     border-bottom: 2px solid #ffffff;
     overflow: hidden;
 }
@@ -84,7 +91,7 @@ div.img-right-wrapper {
 div.img-left-wrapper {
     width: 40%;
     float: left;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
 }
 
@@ -98,6 +105,20 @@ img.img-left {
     height: 100%;
 }
 
+img.img-full {
+    width: 100%;
+    height: inherit;
+}
+
+button.select-btn-heart {
+    background: none;
+    border: none;
+    font-size: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5vh;
+    color: red;
+}
 
 /* Counter */
 ul#countdown {

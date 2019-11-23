@@ -103,6 +103,11 @@ jQuery(document).ready(function ($) {
           }
        }); 
     };
+
+    $('.select-btn-heart').click(function (e) { 
+      e.preventDefault();
+      alert( 'Thank you for clicking 😜. Mobile maa camera cha, herara hello bhandinu 😜.' );
+    });
 });
 
 
