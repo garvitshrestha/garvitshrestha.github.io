@@ -5,14 +5,14 @@
 
 body {
     font-family: 'Open Sans Condensed', sans-serif;
-    background: rgb(255,125,250);
+    background: rgb(255, 125, 250);
     color: #ffffff;
 }
 
 body.body-class {
     font-family: 'Open Sans Condensed', sans-serif;
-    background: rgb(255,125,250);
-    background: linear-gradient(0deg, rgba(255,125,250,1) 0%, rgba(131,45,253,1) 100%);
+    background: rgb(255, 125, 250);
+    background: linear-gradient(0deg, rgba(255, 125, 250, 1) 0%, rgba(131, 45, 253, 1) 100%);
     color: #ffffff;
 }
 
@@ -134,8 +134,9 @@ ul#countdown {
     overflow: hidden;
     font-family: "Arial Narrow", Arial, sans-serif;
     font-weight: bold;
-  }
-  ul#countdown li {
+}
+
+ul#countdown li {
     margin: 0 -3px 0 0;
     padding: 0;
     display: inline-block;
@@ -143,10 +144,15 @@ ul#countdown {
     font-size: 72px;
     font-size: 6vw;
     text-align: center;
-  }
-  ul#countdown li .label {
+}
+
+ul#countdown li .label {
     color: #ffffff;
     font-size: 18px;
     font-size: 1.5vw;
     text-transform: uppercase;
-  }
+}
+
+#prank-hearts {
+    /* text-align: center; */
+}
