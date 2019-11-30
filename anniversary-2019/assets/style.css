@@ -153,6 +153,7 @@ ul#countdown li .label {
     text-transform: uppercase;
 }
 
-#prank-hearts {
-    /* text-align: center; */
+#youtube-player-wrapper > iframe {
+    width: -webkit-fill-available;
+    height: auto;
 }
