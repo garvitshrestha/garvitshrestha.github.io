@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+    <title>Happy Birthday Bebuwa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #F08D30;
+        }
+
+        div.pre-loader {
+            background-color: #fff;
+            height: 100vh;
+            width: 100vw;
+            display: table;
+        }
+
+        .pre-loader-container {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .pre-loader p {
+            color: #F08D30;
+            background: #ffffff;
+        }
+
+
+        div.container {
+            overflow: hidden;
+        }
+
+        div.birthday-greet {
+            text-align: center;
+            padding: 50px;
+        }
+
+        div.birthday-greet h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #fff;
+        }
+
+        .slider-item {
+            position: relative;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            background: #A49D18;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        div.slider-item img {
+            width: 100%;
+        }
+
+        div.awesome-us img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        var hbd = new Audio('./audio.mp3');
+    </script>
+</head>
+
+<body>
+
+    <div class="pre-loader">
+        <div class="pre-loader-container">
+            <button disabled>
+                <img src="cake.svg">
+            </button>
+            <div class="msg-loading">
+                <p>Loading...</p>
+                <p>Please wait while we are making the cake :)</p>
+            </div>
+            <div class="msg-after-loaded" style="display: none;">
+                <p>Click the cake to start</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="display: none;">
+
+        <div class="birthday-greet">
+            <h1>Happy Birthday Bebu</h1>
+        </div>
+
+        <div class="slider-wrapper">
+            <div class="slider-item">
+                <p>Wishing you a very happy birthday</p>
+                <img src="./images/bebu-one.jpeg">
+            </div>
+            <div class="slider-item">
+                <p>May your all the wishes come true</p>
+                <img src="./images/bebu-two.jpeg">
+            </div>
+            <div class="slider-item">
+                <p>I too wanted to celebrate your birthday like this :D</p>
+                <img src="./images/me.jpg">
+            </div>
+            <div class="slider-item">
+                <p>Stay happy and crazy like this hehe</p>
+                <img src="./images/bebu-three.jpg">
+            </div>
+            <div class="slider-item">
+                <p>And also like this too :P</p>
+                <img src="./images/bebu-four.jpg">
+            </div>
+            <div class="slider-item">
+                <p>Happy Birthday Baby</p>
+                <img src="./images/we.jpg">
+            </div>
+        </div>
+
+        <div class="birthday-message">
+            <p>
+                “On this wonderful day, I wish you the best that life has to offer! Happy birthday! <br>
+                I may not be by
+                your side celebrating your special day with you, but I want you to know that I'm thinking of you and
+                wishing you a wonderful birthday.”
+            </p>
+        </div>
+
+        <div class="awesome-us">
+            <img src="./images/us.jpg">
+        </div>
+
+        <div class="birthday-greet">
+            <h1>Happy Birthday Dear</h1>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    </script>
+    <script type="text/javascript">
+        // After window is loaded completely.
+        window.onload = function () {
+            document.querySelector(".pre-loader button").removeAttribute('disabled');
+            document.querySelector(".pre-loader .msg-loading").style.display = "none";
+            document.querySelector(".pre-loader .msg-after-loaded").style.display = "block";
+        }
+
+        // Our main js
+        jQuery(function ($) {
+
+            $(document).on('click', '.pre-loader-container button', function() {
+                hbd.play();
+                $('.pre-loader').css('display', 'none');
+                $('.container').fadeIn()
+            });
+
+            hbd.loop=true;
+        });
+    </script>
+</body>
+
+</html>
